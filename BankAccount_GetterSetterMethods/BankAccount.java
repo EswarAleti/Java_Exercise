@@ -2,33 +2,45 @@ public class BankAccount
 {
 	private String accountNumber,customerName,email,phoneNumber;
 	private double balance;
-	public BankAccount(String accountNumber, String customerName, String email, String phoneNumber, double balance)
+	public void setAccountNumber(String var)
 	{
-		this.accountNumber=accountNumber;
-		this.customerName=customerName;
-		this.email=email;
-		this.phoneNumber=phoneNumber;
-		this.balance=balance;
+		this.accountNumber=var;
+	}
+	public void setCustomerName(String var)
+	{
+		this.accountNumber=var;
+	}	
+	public void setEmail(String var)
+	{
+		this.email=var;
+	}
+	public void setPhoneNumber(String var)
+	{
+		this.phoneNumber=var;
+	}
+	public void setBalance(double var)
+	{
+		this.balance=var;
 	}
 	public String getAccountNumber()
 	{
-		return this.accountNumber;
+		return accountNumber;
 	}
 	public String getCustomerName()
 	{
-		return this.customerName;
+		return customerName;
 	}
 	public String getEmail()
 	{
-		return this.email;
+		return email;
 	}
 	public String getPhoneNumber()
 	{
-		return this.phoneNumber;
+		return phoneNumber;
 	}
 	public double getBalance()
 	{
-		return this.balance;
+		return balance;
 	}
 	public void depositFunds(double depositAmount)
 	{
