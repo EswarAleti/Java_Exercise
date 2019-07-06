@@ -14,7 +14,7 @@ public class Main
 		contactList.add(contact4);
 
 		DailerPad dailerPad=new DailerPad();
-		Contact resultContact=dailerPad.searchContact(contactList,"74880");
+		Contact resultContact=dailerPad.searchContact(contactList,"7488");
 		if(resultContact==null)
 		{
 			System.out.println("Contact not found");
