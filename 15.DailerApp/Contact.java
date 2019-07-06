@@ -24,4 +24,23 @@ public class Contact
 	{
 		return this.secondHalfPhoneNo;
 	}
+	public boolean isNumberMatch(String num)
+	{
+		return  firstHalfPhoneNo.equals(num) || secondHalfPhoneNo.equals(num);
+	}
+	private boolean isMatch(String name,String num)
+	{
+		if(name=="" || name.length()!=num.length())
+			return false;
+		for(int i=0;i<name.length();i++)
+		{
+			if(DailerPad.getNumFromNumpad(name.charAt(i))!=num.charAt(i))
+				return false;
+		}
+		return true;
+	}
+	public boolean isNameMatch(String num)
+	{
+		return isMatch(firstName.toUpperCase(),num)||isMatch(lastName.toUpperCase(),num);
+	}
 }
