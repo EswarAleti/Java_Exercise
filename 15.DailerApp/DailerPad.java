@@ -18,7 +18,7 @@ public class DailerPad
 		}
 		return null;
 	}
-	public boolean isMatched(String name,String num)
+	private boolean isMatched(String name,String num)
 	{
 		if(name=="" || name.length()!=num.length())
 			return false;
@@ -30,7 +30,7 @@ public class DailerPad
 		}
 		return true;
 	}
-	public char getNumFromNumpad(char ch)
+	private char getNumFromNumpad(char ch)
 	{
 		if("ABC".contains(ch+""))
 			return '2';
