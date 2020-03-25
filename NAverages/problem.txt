@@ -1,0 +1,17 @@
+
+
+Some quantities, such as the value of a stock, the size of a population, or the outdoor temperature, have frequent small fluctuations but tend to follow longer-term trends. It is helpful to evaluate such quantities in terms of a moving average: that is, the average of the most recent N measurements (N normally is in the range 3…10.) This technique “smooths out” the most recent fluctuations, exposing the overall trend. Write a program that will compute a moving average of order N for the price of a given stock on M consecutive days, where
+
+M > N + 4.  
+
+To do this, first read the values of N and M from the user. Next read the first N prices and store them in an array. Then repeat the process below for the remaining M-N prices:
+
+a.       Compute and print the average of the N prices in the array.
+
+b.       If all M values have been processed, quit and print a termination message.
+
+c.       Otherwise, eliminate the value in array slot 0 and shift the other N-1 values one slot leftward.
+
+Language: Java
+
+d.       Read a new value into the empty slot at the end of the array.
