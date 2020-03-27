@@ -1,0 +1,36 @@
+Part 1 - Requirements
+
+    Write a Java class called "IntArrayUtils" in file "IntArrayUtils.java".
+    Write a method called "intBubbleSort" with the following method signature:   public static void intBubbleSort(int[] array)
+    Implement a Bubble sort algorithm to sort the elements of the array into ascending order (low to high) in the array.
+    Write a second method called "intDisplayArray" with the following method signature:   public static void intDisplayArray(int[] array)
+    Implement this method such that it displays the values in the int array.
+        The values should be display starting at the current cursor position, i.e. do not output a newline before the first array element.
+        The values should be displayed contiguously (next to each other) separated by a single space.
+        The values should be terminated with a single newline.
+
+Part 2 - Requirements
+
+    Write a Java class called "Lab05" in a file "Lab05.java".
+    Write a "main" method with the following method signature:    public static void main(String[] args)
+    The main method will perform the following tasks:
+        It will determine the length of the args[] and create an int [] of the same length.
+        It will read the arguments from the command line (String[] args) and attempt to convert each one to an int value using the "Integer.parseInt(...)" method.
+        If the conversion to int is successful, the value should be stored in the same position in the int[] as it was read from the args[].
+        If the conversion to int was not successful, an appropriate error message should be printed and the invalid value should be presented to the user.
+        Once the int[] is populated, the main method should invoke IntArrayUtils.intDisplayArray(...), passing the int[] as the parameter.
+        Next, the main method should invoke IntArrayUtils.intBubbleSort(...), passing the int[] as the parameter.
+        Finally, the main method should invoke IntArrayUtils.intDisplayArray(...) again, passing the int[] as the parameter.
+
+Sample Run
+
+PS D:\Root\Workspaces\IS147\Lab05\src> javac IntArrayTools.java
+PS D:\Root\Workspaces\IS147\Lab05\src> javac -cp .   Lab05.java
+PS D:\Root\Workspaces\IS147\Lab05\src> java -cp . Lab05       4 5 2 1 9 6 7 8
+4 5 2 1 9 6 7 8
+1 2 4 5 6 7 8 9
+
+PS D:\Root\Workspaces\IS147\ Lab05\src>
+
+PS D:\Root\Workspaces\IS147\ Lab05\src> java -cp . Lab05 4 5 2 1 9 6 letters
+Error: Bad integer: <letters>
