@@ -1,0 +1,21 @@
+
+
+In Java code
+
+a) Write the implementations of the class Song described as follows:
+
+A Song is identified by the private attributes title (of type String), and duration (of type double) to indicate the playing duration of the song in minutes. The class implementation should provide a default, and an overloaded constructors, getters, setters and toString method.
+
+b) Write a java application to implement the following:
+
+·       Instantiate song1 to be a default object of the class Song.
+
+·       Instantiate song2 to be an object that stores the title “Good Time” and playing duration of 3.5 minutes.
+
+·        Instantiate a third object song3 to have the same data as song2.
+
+·       Input data about N songs (using a Scanner object) and store them in an array called songs then apply the following:
+
+* Using a printf statement, output the total playing duration of all object songs.
+
+*   Using a println statement, output the titles of songs whose playing duration is less than or equal to 2 minutes.
