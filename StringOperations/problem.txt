@@ -1,0 +1,17 @@
+PA#30-C:
+
+Create a class named TextProcessing which has the following methods—
+
+(1) getWordsNumber(): this method accepts a string (few sentences long) as an argument and returns the number of words it contains.
+
+(2) getVowelsNumber(): this method accepts a string (few sentences long) as an argument and returns the number of vowels it contains.
+
+(3) displayBackwardString(): this method accepts a string (few sentences long) as an argument and displays its contents backward.
+
+Then write a demo class to work with TextProcessing class.
+
+PA#30-D:
+
+Write a method which accepts a string as an argument and return the string in reverse order.
+
+For example, if the argument is “abcdef”, the method will return “fedcba”.
