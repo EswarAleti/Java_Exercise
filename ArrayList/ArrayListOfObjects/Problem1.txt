@@ -1,0 +1,3 @@
+PA#30-A:
+
+Write a program where you create an ArrayList object that can store numbers. Show how can you add a number to the ArrayList, remove a number from theArrayList, replace a number in the ArrayList, insert a number in a specific location in the ArrayList, and display all the numbers in the ArrayList.
